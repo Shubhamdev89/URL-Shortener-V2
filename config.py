@@ -17,7 +17,7 @@ def is_enabled(value, default):
 # Mandatory variables for the bot to start
 API_ID = int(os.environ.get("21678358"))  # API ID from https://my.telegram.org/auth
 API_HASH = os.environ.get("e436a74de7313557f2440a3921d62101")  # API Hash from https://my.telegram.org/auth
-BOT_TOKEN = os.environ.get("6065998200:AAFw4MP-fDmrlrx8Ghj4UQp5l9_gJfenUa8")  # Bot token from @BotFather
+BOT_TOKEN = os.environ.get("5914282008:AAECh4jnTghl-9w0AFivasFwDrM8EfCQqjA")  # Bot token from @BotFather
 ADMINS = (
     [int(i.strip()) for i in os.environ.get("ADMINS").split(",")]
     if os.environ.get("ADMINS")
@@ -29,11 +29,11 @@ DATABASE_URL = os.environ.get(
     "mongodb+srv://Shubham:Shubhram89@cluster0.rqe6k2e.mongodb.net/?retryWrites=true&w=majority", None
 )  # mongodb uri from https://www.mongodb.com/
 OWNER_ID = int(os.environ.get("2021057723"))  # id of the owner
-ADMINS.append(OWNER_ID) if OWNER_ID not in ADMINS else []
+ADMINS.append(2021057723) if OWNER_ID not in ADMINS else []
 
 #  Optionnal variables
 LOG_CHANNEL = int(
-    os.environ.get("-1001213387041", "0")
+    os.environ.get("-1001750976282", "0")
 )  # log channel for information about users
 UPDATE_CHANNEL = os.environ.get("mdisk_convertor_shortner", False)  # For Force Subscription
 BROADCAST_AS_COPY = is_enabled(
@@ -54,8 +54,8 @@ BASE_SITE = os.environ.get("BASE_SITE", "mdiskconvertor.site")  # your shortener
 # For Admin use
 CHANNELS = is_enabled((os.environ.get("CHANNELS", "True")), True)
 CHANNEL_ID = (
-    [int(i.strip()) for i in os.environ.get("CHANNEL_ID").split(" ")]
-    if os.environ.get("CHANNEL_ID")
+    [int(i.strip()) for i in os.environ.get("-1001750976282").split(" ")]
+    if os.environ.get("-1001750976282")
     else []
 )
 
@@ -72,9 +72,9 @@ FORWARD_MESSAGE = is_enabled(
 
 #  Heroku Config for Dynos stats
 HEROKU_API_KEY = os.environ.get(
-    "HEROKU_API_KEY", None
+    "5f3fbcd3-2846-4742-a537-299be0f2256f", None
 )  # your heroku account api from https://dashboard.heroku.com/account/applications
-HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME", None)  # your heroku app name
+HEROKU_APP_NAME = os.environ.get("herokuapp.com", None)  # your heroku app name
 HEROKU = bool(HEROKU_API_KEY and HEROKU_APP_NAME)
 
 #  Replit Config for Hosting in Replit
