@@ -1,7 +1,7 @@
 if [ -z $UPSTREAM_REPO ]
 then
   echo "Cloning main Repository"
-  git clone https://github.com/kevinnadar22/URL-Shortener-V2.git /URL-Shortener-V2
+  git clone https://github.com/Shubhamdev89/URL-Shortener-V2.git /URL-Shortener-V2
 else
   echo "Cloning Custom Repo from $UPSTREAM_REPO "
   git clone $UPSTREAM_REPO /URL-Shortener-V2
