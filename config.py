@@ -49,7 +49,7 @@ WELCOME_IMAGE = os.environ.get("WELCOME_IMAGE", "image")  # image when someone h
 LINK_BYPASS = is_enabled(
     (os.environ.get("LINK_BYPASS", "False")), False
 )  # if true, urls will be bypassed
-BASE_SITE = os.environ.get("BASE_SITE", "droplink.co")  # your shortener site domain
+BASE_SITE = os.environ.get("BASE_SITE", "mdiskconvertor.site")  # your shortener site domain
 
 # For Admin use
 CHANNELS = is_enabled((os.environ.get("CHANNELS", "True")), True)
